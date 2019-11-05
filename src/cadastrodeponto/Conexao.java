@@ -2,6 +2,7 @@ package cadastrodeponto;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.Statement;
 
 public class Conexao {
 	private String url;
@@ -22,6 +23,19 @@ public class Conexao {
 		} catch (Exception e) {
 			e.printStackTrace();
 			System.out.println("Deu n ó");
+		}
+		
+	}
+	
+	public int rodaSQL(String sql) {
+		try {
+			Statement stm = con.createStatement();
+			int res = stm.executeUpdate(sql);
+			con.close();
+			return res;
+		} catch (Exception e) {
+			return 0;
+			
 		}
 	}
  }
