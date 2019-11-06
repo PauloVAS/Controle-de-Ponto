@@ -2,19 +2,24 @@
 package cadastrodeponto;
 
 public class Gerente extends Funcionario {
-    private int id_gerente;
+    private String tipo_gerente;
 
-    public Gerente(int matricula, String nome, String cpf, String estadoCivil, String rg, String rua, int numero, String bairro, String cep, String complemento, String uf, String telefone, String celular, String email, String senha, String confirmarSenha) {
-        super(matricula, nome, cpf, estadoCivil, rg, rua, numero, bairro, cep, complemento, uf, telefone, celular, email, senha, confirmarSenha);
-    }
+	public Gerente(int matricula, String nome, String cpf, String estado_civil, String rg, String endereco, int cep,
+			String telefone, double salario, String email, String tipo_gerente) {
+		super(matricula, nome, cpf, estado_civil, rg, endereco, cep, telefone, salario, email);
+		this.tipo_gerente = tipo_gerente;
+	}
 
-    public int getId_gerente() {
-        return id_gerente;
-    }
+	public String getTipo_gerente() {
+		return tipo_gerente;
+	}
 
-    public void setId_gerente(int id_gerente) {
-        this.id_gerente = id_gerente;
-    }
+	public void setTipo_gerente(String tipo_gerente) {
+		this.tipo_gerente = tipo_gerente;
+	}
+    
+    
+
     
     
 

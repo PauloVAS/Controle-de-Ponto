@@ -4,164 +4,112 @@ public class Funcionario{
     private int matricula;
     private String nome;
     private String cpf;
-    private String estadoCivil;
+    private String estado_civil;
     private String rg;
-    private String rua;
-    private int numero;
-    private String bairro;
-    private String cep;
-    private String complemento;
-    private String uf;
+    private String endereco;
+    private int cep;
     private String telefone;
-    private String celular; 
+    private double salario;
     private String email;
-    private String senha;
-    private String confirmarSenha;
+	
+    public Funcionario(int matricula, String nome, String cpf, String estado_civil, String rg, String endereco, int cep,
+			String telefone, double salario, String email) {
+		super();
+		this.matricula = matricula;
+		this.nome = nome;
+		this.cpf = cpf;
+		this.estado_civil = estado_civil;
+		this.rg = rg;
+		this.endereco = endereco;
+		this.cep = cep;
+		this.telefone = telefone;
+		this.salario = salario;
+		this.email = email;
+	}
 
-    public Funcionario(int matricula, String nome, String cpf, String estadoCivil, String rg, String rua, int numero, String bairro, String cep, String complemento, String uf, String telefone, String celular, String email, String senha, String confirmarSenha) {
-        this.nome = nome;
-        this.cpf = cpf;
-        this.estadoCivil = estadoCivil;
-        this.rg = rg;
-        this.rua = rua;
-        this.numero = numero;
-        this.bairro = bairro;
-        this.cep = cep;
-        this.complemento = complemento;
-        this.uf = uf;
-        this.telefone = telefone;
-        this.celular = celular;
-        this.email = email;
-        this.senha = senha;
-        this.confirmarSenha = confirmarSenha;
-    }
+	public int getMatricula() {
+		return matricula;
+	}
 
-    public int getMatricula() {
-        return matricula;
-    }
+	public void setMatricula(int matricula) {
+		this.matricula = matricula;
+	}
 
-    public void setMatricula(int matricula) {
-        this.matricula = matricula ;
-    }
-    public String getNome() {
-        return nome;
-    }
+	public String getNome() {
+		return nome;
+	}
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
 
-    public String getCpf() {
-        return cpf;
-    }
+	public String getCpf() {
+		return cpf;
+	}
 
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
 
-    public String getEstadoCivil() {
-        return estadoCivil;
-    }
+	public String getEstado_civil() {
+		return estado_civil;
+	}
 
-    public void setEstadoCivil(String estadoCivil) {
-        this.estadoCivil = estadoCivil;
-    }
+	public void setEstado_civil(String estado_civil) {
+		this.estado_civil = estado_civil;
+	}
 
-    public String getRg() {
-        return rg;
-    }
+	public String getRg() {
+		return rg;
+	}
 
-    public void setRg(String rg) {
-        this.rg = rg;
-    }
+	public void setRg(String rg) {
+		this.rg = rg;
+	}
 
-    public String getRua() {
-        return rua;
-    }
+	public String getEndereco() {
+		return endereco;
+	}
 
-    public void setRua(String rua) {
-        this.rua = rua;
-    }
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
+	}
 
-    public int getNumero() {
-        return numero;
-    }
+	public int getCep() {
+		return cep;
+	}
 
-    public void setNumero(int numero) {
-        this.numero = numero;
-    }
+	public void setCep(int cep) {
+		this.cep = cep;
+	}
 
-    public String getBairro() {
-        return bairro;
-    }
+	public String getTelefone() {
+		return telefone;
+	}
 
-    public void setBairro(String bairro) {
-        this.bairro = bairro;
-    }
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
+	}
 
-    public String getCep() {
-        return cep;
-    }
+	public double getSalario() {
+		return salario;
+	}
 
-    public void setCep(String cep) {
-        this.cep = cep;
-    }
+	public void setSalario(double salario) {
+		this.salario = salario;
+	}
 
-    public String getComplemento() {
-        return complemento;
-    }
+	public String getEmail() {
+		return email;
+	}
 
-    public void setComplemento(String complemento) {
-        this.complemento = complemento;
-    }
-
-    public String getUf() {
-        return uf;
-    }
-
-    public void setUf(String uf) {
-        this.uf = uf;
-    }
-
-    public String getTelefone() {
-        return telefone;
-    }
-
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
-    }
-
-    public String getCelular() {
-        return celular;
-    }
-
-    public void setCelular(String celular) {
-        this.celular = celular;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getSenha() {
-        return senha;
-    }
-
-    public void setSenha(String senha) {
-        this.senha = senha;
-    }
-
-    public String getConfirmarSenha() {
-        return confirmarSenha;
-    }
-
-    public void setConfirmarSenha(String confirmarSenha) {
-        this.confirmarSenha = confirmarSenha;
-    }
+	public void setEmail(String email) {
+		this.email = email;
+	}
     
     
+    
+    
+    
+   
 }

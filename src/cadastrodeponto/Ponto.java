@@ -2,39 +2,52 @@
 package cadastrodeponto;
 
 public class Ponto {
-    private int matricula;
-    private String chegada;
-    private String saida;
+    private int id_ponto;
+    private String hora_chegada;
+    private String hora_saida;
+    private int fk_matricula;
+	
+    public Ponto(int id_ponto, String hora_chegada, String hora_saida, int fk_matricula) {
+		super();
+		this.id_ponto = id_ponto;
+		this.hora_chegada = hora_chegada;
+		this.hora_saida = hora_saida;
+		this.fk_matricula = fk_matricula;
+	}
 
-    public Ponto(int matricula, String chegada, String saida) {
-        this.matricula = matricula;
-        this.chegada = chegada;
-        this.saida = saida;
-    }
+	public int getId_ponto() {
+		return id_ponto;
+	}
 
-    public int getMatricula() {
-        return matricula;
-    }
+	public void setId_ponto(int id_ponto) {
+		this.id_ponto = id_ponto;
+	}
 
-    public void setMatricula(int matricula) {
-        this.matricula = matricula;
-    }
+	public String getHora_chegada() {
+		return hora_chegada;
+	}
 
-    public String getChegada() {
-        return chegada;
-    }
+	public void setHora_chegada(String hora_chegada) {
+		this.hora_chegada = hora_chegada;
+	}
 
-    public void setChegada(String chegada) {
-        this.chegada = chegada;
-    }
+	public String getHora_saida() {
+		return hora_saida;
+	}
 
-    public String getSaida() {
-        return saida;
-    }
+	public void setHora_saida(String hora_saida) {
+		this.hora_saida = hora_saida;
+	}
 
-    public void setSaida(String saida) {
-        this.saida = saida;
-    }
+	public int getFk_matricula() {
+		return fk_matricula;
+	}
+
+	public void setFk_matricula(int fk_matricula) {
+		this.fk_matricula = fk_matricula;
+	}
+    
+    
     
     
 }
