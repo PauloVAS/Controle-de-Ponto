@@ -37,5 +37,22 @@ public class Conexao {
 			return 0;
 			
 		}
+		
 	}
+	
+	public static void main(String[] args) {
+		Conexao con = new Conexao();
+		String sql = "update funcionario set telefone = 99995555 where matricula = 11";
+		  
+		int resultado = con.rodaSQL(sql);
+		if (resultado > 0) {
+			System.out.println("Instrução executada com sucesso!");
+		}else {
+			System.out.println("Erro ao executar instrução");
+		}
+	}
+	
+	
+	
+	
  }
